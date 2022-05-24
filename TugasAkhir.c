@@ -1,5 +1,5 @@
 //Adrian Leo Pradana x Raafiandy Ghani 
-//2106718344 x 
+//2106718344 x 2106718445
 #include<stdio.h>
 
 struct gojek_t {
