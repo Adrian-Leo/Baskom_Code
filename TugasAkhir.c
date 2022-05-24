@@ -1,78 +1,83 @@
+//Adrian Leo Pradana x Raafiandy Ghani 
+//2106718344 x 
 #include<stdio.h>
 
 struct gojek_t {
+	//struct member
 	char alamat_asal[50], alamat_tujuan[50], nama_menu[50], alamat[50];
 	float harga,jarak, total ;
 	int jumlah;
-		
+	
+//struct variable	
 } goride_1, gofood_1;
 
+//main menu
 void menu(){
-		printf("\n\n");
-	    printf("\t********************************************** \n"  );
-        printf("\t |            W E L C O M E   T O             |\n" );
-        printf( "\t|                G O J E K                   |\n" );
-        printf( "\t**********************************************\n" );
-        printf( "\t|                                            |\n" );
-        printf( "\t| 1. GORIDE                                  |\n" );
-        printf( "\t| 2. GOFOOD                                  |\n" );
-        printf( "\t| 3. LIHAT RIWAYAT TRANSAKSI                 |\n" );
-        printf( "\t| 4. Program Done                                           |\n" );
-        printf( "\t|                                            |\n" );
-        printf( "\t**********************************************\n" );
+	printf("\n\n");
+	printf(" \t**********************************************\n"  );
+    printf(" \t|            W E L C O M E   T O             |\n" );
+    printf( "\t|                G O J E K                   |\n" );
+    printf( "\t**********************************************\n" );
+    printf( "\t|                                            |\n" );
+    printf( "\t| 1. GORIDE                                  |\n" );
+    printf( "\t| 2. GOFOOD                                  |\n" );
+    printf( "\t| 3. LIHAT RIWAYAT TRANSAKSI                 |\n" );
+    printf( "\t| 4. Program Done                            |\n" );
+    printf( "\t|                                            |\n" );
+    printf( "\t**********************************************\n" );
        
 }
 
+//go ride header
 void goRideMenu(){
-		system("cls");
-		printf( "\t|********************************************|\n" );
-        printf( "\t|            W E L C O M E   T O             |\n" );
-        printf( "\t|               G O  R I D E S               |\n" );
-        printf( "\t**********************************************\n" );
-        printf( "\n\n");
+	system("cls");
+	printf( "\t|********************************************|\n" );
+    printf( "\t|            W E L C O M E   T O             |\n" );
+    printf( "\t|               G O  R I D E S               |\n" );
+    printf( "\t**********************************************\n" );
+    printf( "\n\n");
 }
 
+// go food header
 void goFoodMenu(){
-		system("cls");
-		printf( "\t|********************************************|\n" );
-        printf( "\t|            W E L C O M E   T O             |\n" );
-        printf( "\t|               G O  F O O D                 |\n" );
-        printf( "\t**********************************************\n" );
-        printf( "\n\n");
+	system("cls");
+	printf( "\t|********************************************|\n" );
+    printf( "\t|            W E L C O M E   T O             |\n" );
+    printf( "\t|               G O  F O O D                 |\n" );
+    printf( "\t**********************************************\n" );
+    printf( "\n\n");
 }
 
-
-
+//print go ride receipt
 void printGoRide(){
-
-		int j=0;
 
 		printf( "\t**********************************************\n" );
         printf( "\t|                G O  R I D E                |\n" );
         printf( "\t|                R E C E I P T               |\n" );
         printf( "\t**********************************************\n" );
-		printf( "\n   	Alamat Asal		:   %s " , goride_1.alamat_asal );
-		printf( "\n   	Alamat Tujuan	:  %s" , goride_1.alamat_tujuan  );
-		printf( "\n    	Rentang Jarak	:  %0.2f Km " , goride_1.jarak  );
-		printf( "\n    	Total Harga		: 	%0.2f" , goride_1.total );	
+		printf( "\n   	Alamat Asal\t	:   %s " , goride_1.alamat_asal );
+		printf( "\n   	Alamat Tujuan\t	:   %s" , goride_1.alamat_tujuan  );
+		printf( "\n    	Rentang Jarak\t	:   %0.2f Km " ,goride_1.jarak  );
+		printf( "\n    	Total Harga\t	: 	%0.2f Rupiah" ,goride_1.total );	
 		
 	
 }
 
+//print go food receipt
 void printGoFood()
 {
-			printf( "\t**********************************************\n" );
-	        printf( "\t|                G O  F O O D	            |\n" );
-	        printf( "\t|                R E C E I P T               |\n" );
-	        printf( "\t**********************************************\n" );
-			printf( "\n Alamat Rumah 		: 	%s	" , gofood_1.alamat );
-			printf( "\n Nama Menu 		    :	%s	" , gofood_1.nama_menu );
-			printf( "\n Jumlah Pesanan		: 	%d	" , gofood_1.jumlah );
-			printf( "\n Total Harga 		: Rp %0.2f 	" ,gofood_1.total ) ;
+		printf( "\t**********************************************\n" );
+	    printf( "\t|                G O  F O O D	            |\n" );
+	    printf( "\t|                R E C E I P T               |\n" );
+	    printf( "\t**********************************************\n" );
+		printf( "\n Alamat Rumah\t 		: 	%s	" , gofood_1.alamat );
+		printf( "\n Nama Menu\t 		:	%s	" , gofood_1.nama_menu );
+		printf( "\n Jumlah Pesanan\t	: 	%d	" , gofood_1.jumlah );
+		printf( "\n Total Harga\t 		: Rp%0.2f Rupiah" ,gofood_1.total ) ;
 	
 }
 
-
+//print go ride receipt
 void go_rides(){
 	int total,choose;
 	printf("\n Input your address : ");
@@ -90,10 +95,10 @@ void go_rides(){
 	
 }
 
+//print gofood receipt 
 void go_foods(){
 	int choose;
 
-	printf("\n\n");
 	printf( "\t**********************************************\n" );
     printf( "\t|                G O  F O O D                 |\n" );
     printf( "\t|                  M E N U                    |\n" );
@@ -139,7 +144,7 @@ void go_foods(){
 	
 }
 
-
+//print transaction history
 void transactionHistory(){
 	system("cls");
 		int history;
@@ -187,7 +192,7 @@ int main(){
 				transactionHistory();
 				break;
 			default :
-				printf("\n Program Done ");
+				printf("\n =========Thank You For Using Our Apps========= ");
 		} 
 			
 	}
