@@ -15,16 +15,16 @@ struct gojek_t {
 void menu(){
 	printf("\n\n");
 	printf(" \t**********************************************\n"  );
-    printf(" \t|            W E L C O M E   T O             |\n" );
-    printf( "\t|                G O J E K                   |\n" );
-    printf( "\t**********************************************\n" );
-    printf( "\t|                                            |\n" );
-    printf( "\t| 1. GORIDE                                  |\n" );
-    printf( "\t| 2. GOFOOD                                  |\n" );
-    printf( "\t| 3. LIHAT RIWAYAT TRANSAKSI                 |\n" );
-    printf( "\t| 4. Program Done                            |\n" );
-    printf( "\t|                                            |\n" );
-    printf( "\t**********************************************\n" );
+    	printf(" \t|            W E L C O M E   T O             |\n" );
+    	printf( "\t|                G O J E K                   |\n" );
+    	printf( "\t**********************************************\n" );
+    	printf( "\t|                                            |\n" );
+    	printf( "\t| 1. GORIDE                                  |\n" );
+    	printf( "\t| 2. GOFOOD                                  |\n" );
+    	printf( "\t| 3. LIHAT RIWAYAT TRANSAKSI                 |\n" );
+    	printf( "\t| 4. Program Done                            |\n" );
+    	printf( "\t|                                            |\n" );
+    	printf( "\t**********************************************\n" );
        
 }
 
@@ -32,29 +32,29 @@ void menu(){
 void goRideMenu(){
 	system("cls");
 	printf( "\t|********************************************|\n" );
-    printf( "\t|            W E L C O M E   T O             |\n" );
-    printf( "\t|               G O  R I D E S               |\n" );
-    printf( "\t**********************************************\n" );
-    printf( "\n\n");
+    	printf( "\t|            W E L C O M E   T O             |\n" );
+    	printf( "\t|               G O  R I D E S               |\n" );
+    	printf( "\t**********************************************\n" );
+    	printf( "\n\n");
 }
 
 // go food header
 void goFoodMenu(){
 	system("cls");
 	printf( "\t|********************************************|\n" );
-    printf( "\t|            W E L C O M E   T O             |\n" );
-    printf( "\t|               G O  F O O D                 |\n" );
-    printf( "\t**********************************************\n" );
-    printf( "\n\n");
+    	printf( "\t|            W E L C O M E   T O             |\n" );
+    	printf( "\t|               G O  F O O D                 |\n" );
+    	printf( "\t**********************************************\n" );
+    	printf( "\n\n");
 }
 
 //print go ride receipt
 void printGoRide(){
 
 	printf( "\t**********************************************\n" );
-    printf( "\t|                G O  R I D E                |\n" );
-    printf( "\t|                R E C E I P T               |\n" );
-    printf( "\t**********************************************\n" );
+   	printf( "\t|                G O  R I D E                |\n" );
+    	printf( "\t|                R E C E I P T               |\n" );
+    	printf( "\t**********************************************\n" );
 	printf( "\n   	Alamat Asal\t	:   %s " , goride_1.alamat_asal );
 	printf( "\n   	Alamat Tujuan\t	:   %s" , goride_1.alamat_tujuan  );
 	printf( "\n    	Rentang Jarak\t	:   %0.2f Km " ,goride_1.jarak  );
@@ -100,9 +100,9 @@ void go_foods(){
 	int choose;
 
 	printf( "\t**********************************************\n" );
-    printf( "\t|                G O  F O O D                 |\n" );
-    printf( "\t|                  M E N U                    |\n" );
-    printf( "\t**********************************************\n" );
+    	printf( "\t|                G O  F O O D                 |\n" );
+    	printf( "\t|                  M E N U                    |\n" );
+    	printf( "\t**********************************************\n" );
 	printf( "\t 1. Bebek Sinjay \n" );
 	printf( "\t 2. Nasi Kaget \n" );
 	printf( "\t 3. Sate Setan \n" );
